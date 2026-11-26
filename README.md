@@ -13,7 +13,7 @@ models/pointnet2_utils.py:	PointNet++ layers, plus random centroid sampling and 
 DATA 
 
 Source: the RSRD road surface reconstruction dataset (Zhao et al. 2024), https://ztsrxh.github.io/rsrd/; paper: https://arxiv.org/abs/2310.02262. Download it from the project page.
-Strip data: used unchanged from the dataset (the 4096-point strips used for training and testing). Put it in data/, laid out as expected by data_utils/ColorRoadDatasetLoader.py.
+Strip data: used unchanged from the dataset (the 4096-point strips used for training and testing). Put it in data/, laid out as expected by data_utils/ColorRoadDatasetLoader.py. Expected layout: `data/rsrd_segmentation/train/*.pcd` and `data/rsrd_segmentation/test/*.pcd`.
 Scene data: the full scenes were fused (point cloud and camera colour) by following the instructions at the RSRD development toolkit, https://github.com/ztsrxh/RSRD_dev_toolkit. Except substituting RSRD-seg uncropped scenes in place of RSRD-dense, via matching file names. 
 
 References 
